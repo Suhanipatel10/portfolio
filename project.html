@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Detailed project page for a portfolio project." />
+  <title>Project Detail | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="detail-page">
+  <header class="detail-header">
+    <div class="container nav detail-nav">
+      <a class="breadcrumb" href="index.html">&lt; Back to Portfolio</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="detail-hero" id="detailHero">
+      <div class="container detail-grid">
+        <article class="detail-panel reveal">
+          <div style="display:flex; align-items:center; justify-content:flex-start; gap:16px; flex-wrap:wrap;">
+            <a id="detailGitHubTop" class="breadcrumb" href="#" target="_blank" rel="noreferrer" style="white-space:nowrap;">GitHub</a>
+          </div>
+          <div class="title-row">
+            <h1 id="projectTitle">Project Title</h1>
+            <img id="projectLogo" src="" alt="logo" />
+          </div>
+          <p class="detail-subtitle" id="projectSummary"></p>
+          <div class="detail-image" id="projectImageWrap" aria-hidden="true"></div>
+          <div class="detail-links">
+            <a id="downloadPRD" class="primary" download>Download PRD</a>
+          </div>
+          <div id="caseStudyDraft" class="case-study-draft" hidden></div>
+
+          <div class="detail-section">
+            <h2>What It Delivered</h2>
+            <ul class="detail-list" id="projectOutcomes"></ul>
+          </div>
+
+          <div class="detail-section">
+            <div class="detail-links">
+              <a id="detailDemo" class="primary" href="#" target="_blank" rel="noreferrer">Live Demo</a>
+            </div>
+          </div>
+        </article>
+
+        <aside class="detail-aside reveal">
+          <div class="detail-sidebar-block">
+            <p class="detail-label">Project Description</p>
+            <p class="detail-subtitle" id="projectNotes"></p>
+          </div>
+          <div class="detail-sidebar-block">
+            <p class="detail-label">Tech Stack</p>
+            <div id="projectStack" class="detail-sidebar-list"></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="imageLightbox" class="lightbox" aria-hidden="true">
+    <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Close image viewer">×</button>
+    <button class="lightbox-arrow lightbox-prev" id="lightboxPrev" type="button" aria-label="Previous image">‹</button>
+    <figure class="lightbox-frame" id="lightboxFrame"></figure>
+    <button class="lightbox-arrow lightbox-next" id="lightboxNext" type="button" aria-label="Next image">›</button>
+  </div>
+
+  <script src="data.js"></script>
+  <script src="project-detail.js"></script>
+</body>
+</html>

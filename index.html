@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A refined portfolio for analytics, BI, and PM-adjacent work with projects, skills, experience, certifications, and contact details." />
+  <meta name="keywords" content="portfolio, data analyst, python, sql, power bi, tableau, projects, resume" />
+  <meta name="author" content="Suhani Patel" />
+  <meta property="og:title" content="Suhani Patel | Portfolio" />
+  <meta property="og:description" content="A refined portfolio with separate developer and PM-style project tracks, elegant skills, timeline experience, and certifications." />
+  <meta property="og:type" content="website" />
+  <title>Suhani Patel | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <nav id="siteNav" class="site-nav">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <h1 id="heroName">Suhani Patel</h1>
+          <p class="subtitle" id="heroTitle"></p>
+          <p class="subtitle" id="heroIntro"></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#projects">Explore work</a>
+            <a class="btn btn-secondary" href="resume.pdf" download>Download resume</a>
+          </div>
+          <ul class="hero-meta" id="heroMeta"></ul>
+        </div>
+        <div class="hero-panel reveal">
+          <div class="panel-card">
+            <p class="panel-label">What I bring</p>
+            <div id="highlightList" class="highlight-list"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <section class="section" id="about">
+        <div class="container narrow reveal">
+          <h2>About Me</h2>
+        <p id="aboutText" class="lead"></p>
+      </div>
+    </section>
+
+    <section class="section alt" id="skills">
+      <div class="container reveal">
+        <div class="section-heading">
+          <div>
+            <h2>Skills</h2>
+          </div>
+        </div>
+        <div id="skillsGrid" class="skills-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <h2>Projects</h2>
+          </div>
+        </div>
+        <div id="projectsWrap" class="project-collections"></div>
+      </div>
+    </section>
+
+    <section class="section alt" id="experience">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <div>
+            <h2>Experience</h2>
+            <p class="section-copy">Short, specific, and impact-first.</p>
+          </div>
+        </div>
+        <div id="experienceList" class="timeline"></div>
+      </div>
+    </section>
+
+    <section class="section" id="certifications">
+      <div class="container reveal">
+        <div class="section-heading">
+          <div>
+            <h2>Certifications</h2>
+            <p class="section-copy">A clean place for verified learning and professional credentials.</p>
+          </div>
+        </div>
+        <div id="certificationsGrid" class="certifications-grid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container narrow">
+        <div class="section-heading reveal">
+          <div>
+            <h2>Education</h2>
+          </div>
+        </div>
+        <div id="educationList" class="timeline"></div>
+      </div>
+    </section>
+
+    <section class="section contact-section alt" id="contact">
+      <div class="container contact-grid reveal">
+        <div>
+          <h2>Contact</h2>
+          <p class="section-copy">Open to analytics, BI, and product-facing opportunities where clarity and ownership matter.</p>
+        </div>
+        <div class="contact-card">
+          <a id="contactEmail" href="mailto:your.email@example.com">your.email@example.com</a>
+          <a id="contactLinkedIn" href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a id="contactGitHub" href="https://github.com" target="_blank" rel="noreferrer">GitHub</a>
+          <span id="contactLocation">Location</span>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> <span id="footerName">Suhani Patel</span>.</p>
+      <a class="text-link" href="#home">Back to top</a>
+    </div>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
