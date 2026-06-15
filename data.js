@@ -57,7 +57,7 @@ window.portfolioData = {
         {
           type: "text",
           title: "1. Context & Problem",
-          body: "While ordering from Domino\’s, I experienced a situation where the delivered order was incorrect. When I tried to resolve it through the app, the process felt slow, unclear, and heavily dependent on chatbot interactions. The system offered compensation (like vouchers) instead of actually solving the problem. This highlighted a broader product issue: in a high-frequency product like Domino’s, even small failures in order accuracy can significantly impact user trust if the resolution experience is not seamless.",
+          body: "While ordering from Domino’s, I experienced a situation where the delivered order was incorrect. When I tried to resolve it through the app, the process felt slow, unclear, and heavily dependent on chatbot interactions. The system offered compensation (like vouchers) instead of actually solving the problem. This highlighted a broader product issue: in a high-frequency product like Domino’s, even small failures in order accuracy can significantly impact user trust if the resolution experience is not seamless.",
 
         },
         {
@@ -68,13 +68,13 @@ window.portfolioData = {
         {
           type: "text",
           title: "3. Root Cause & Key Insight",
-          body: "After breaking down the experience, the problem was not just incorrect orders, but the way the system handles them.<br>\
-        • The complaint flow is unstructured and not user-driven<br>\
-        • There is no item-level issue reporting<br>\
-        • Resolution options are not clearly presented<br>\
-        • There is limited visibility into the status of the issue<br><br>\
-        <strong>Key Insight:</strong><br>\
-        The real problem is not issue resolution itself, but the absence of a structured, transparent, and user-controlled resolution process." ,
+          body: `After breaking down the experience, the problem was not just incorrect orders, but the way the system handles them.<br>
+        • The complaint flow is unstructured and not user-driven<br>
+        • There is no item-level issue reporting<br>
+        • Resolution options are not clearly presented<br>
+        • There is limited visibility into the status of the issue<br><br>
+        <strong>Key Insight:</strong><br>
+        The real problem is not issue resolution itself, but the absence of a structured, transparent, and user-controlled resolution process.` ,
         },
         {
           type: "text",
@@ -88,25 +88,24 @@ window.portfolioData = {
         {
           type: "text",
           title: "4. Solution Exploration & Decision",
-          body: "The solution introduces a guided, step-by-step issue resolution flow integrated within the order details screen.<br>\
-        Instead of relying on open-ended chat interactions, the system helps users:<br>\
-        • Clearly identify the issue (wrong item, missing item, delay)<br>\
-        • Select the specific item affected<br>\
-        • Upload an image for quick verification<br>\
-        • Choose how they want the issue resolved (refund or replacement)<br>\
-        • Track the progress of their request in real-time<br>\
-        This transforms the experience from reactive support to a structured decision flow.",
+          body: `The solution introduces a guided, step-by-step issue resolution flow integrated within the order details screen.<br>
+        Instead of relying on open-ended chat interactions, the system helps users:<br>
+        • Clearly identify the issue (wrong item, missing item, delay)<br>
+        • Select the specific item affected<br>
+        • Upload an image for quick verification<br>
+        • Choose how they want the issue resolved (refund or replacement)<br>
+        • Track the progress of their request in real-time<br>
+        This transforms the experience from reactive support to a structured decision flow.`,
         },
         {
           type: "text",
           title: "5. Final Solution",
-          body: "The solution introduces a guided, step-by-step issue resolution flow integrated within the order details screen.<br><br>\
-        • Clearly identify the issue (wrong item, missing item, delay)<br>\
-        • Select the specific item affected<br>\
-        • Upload an image for quick verification<br>\
-        • Choose how they want the issue resolved (refund or replacement)<br>\
-        • Track the progress of their request in real-time<br><br>\
-        <strong>User Flow</strong>"
+          body: `The solution introduces a guided, step-by-step issue resolution flow integrated within the order details screen.<br><br>
+        • Clearly identify the issue (wrong item, missing item, delay)<br>
+        • Select the specific item affected<br>
+        • Upload an image for quick verification<br>
+        • Choose how they want the issue resolved (refund or replacement)<br>
+        • Track the progress of their request in real-time`
         },
         {
           type: "text",
