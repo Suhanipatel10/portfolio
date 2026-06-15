@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Domino's Case Study</title>
+
+<style>
+
+/* ===== ROOT DESIGN SYSTEM (FROM YOUR PORTFOLIO) ===== */
+:root {
+  --bg: #f5f0e8;
+  --panel: rgba(255, 252, 247, 0.82);
+  --line: rgba(23, 32, 42, 0.11);
+  --text: #17202a;
+  --muted: #5f6872;
+  --accent: #5f6f62;
+  --accent-2: #8a7765;
+}
+
+/* ===== BASE ===== */
+body {
+  margin: 0;
+  font-family: "Times New Roman", serif;
+  color: var(--text);
+
+  background:
+    radial-gradient(circle at top left, rgba(138, 119, 101, 0.10), transparent 28%),
+    radial-gradient(circle at top right, rgba(95, 111, 98, 0.10), transparent 24%),
+    linear-gradient(180deg, #f9f5ef 0%, var(--bg) 100%);
+}
+
+/* ===== CONTAINER ===== */
+.wrapper {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 16px;
+}
+
+.card {
+  background: var(--panel);
+  border-radius: 26px;
+  padding: 40px;
+
+  border: 1px solid var(--line);
+  box-shadow: 0 24px 70px rgba(23, 32, 42, 0.10);
+  backdrop-filter: blur(14px);
+}
+
+/* ===== HEADER ===== */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+h1 {
+  font-size: 3.6rem;
+  line-height: 1.1;
+  margin: 0;
+  letter-spacing: -0.02em;
+  font-weight: 500;
+}
+
+.logo {
+  width: 210px;
+}
+
+/* ===== BUTTON ===== */
+.btn {
+  display: inline-block;
+  margin-top: 18px;
+
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: white;
+
+  padding: 7px 14px;
+  border-radius: 999px;
+  font-size: 1.2rem;
+  text-decoration: none;
+
+  box-shadow: 0 6px 18px rgba(23, 32, 42, 0.15);
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  margin-top: 34px;
+}
+
+/* 🔥 THIS IS WHERE YOUR MAIN PROBLEM WAS */
+.section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+/* BODY TEXT */
+.section p {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: black;
+}
+
+/* BULLETS — FIXED */
+ul {
+  margin-top: 10px;
+  padding-left: 18px;
+}
+
+li {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  color: black;
+  margin-bottom: 4px;
+}
+
+/* IMAGES */
+img {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 14px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+  <div class="card">
+
+
+<!-- HEADER -->
+<div class="header">
+  <h1>Domino's - Enhanced Customer Support</h1>
+  <img src="assests/logo.png" class="logo">
+</div>
+
+<!-- BUTTON -->
+<a href="assests/PRD_Dominos.pdf" download class="btn">Download PRD</a>
+
+<!-- SECTION 1 -->
+<div class="section">
+  <h2>1. Context & Problem</h2>
+  <p>
+    While ordering from Domino’s, I experienced a situation where the delivered order was incorrect. When I tried to resolve it through the app, the process felt slow, unclear, and heavily dependent on chatbot interactions. The system offered compensation (like vouchers) instead of actually solving the problem. This highlighted a broader product issue: in a high-frequency product like Domino’s, even small failures in order accuracy can significantly impact user trust if the resolution experience is not seamless.
+  </p>
+</div>
+
+<!-- SECTION 2 -->
+<div class="section">
+  <h2>2. Understanding the Problem</h2>
+  <p>
+    The current support experience requires users to navigate through predefined chatbot flows, often without clarity on what will happen next. Users have limited control over how the issue is resolved, and the process feels reactive rather than guided. From a user’s perspective, the frustration is not just about receiving the wrong item, it’s about the effort required to fix it. Many users may choose not to report issues at all, leading to silent dissatisfaction and reduced trust in the platform.  </p>
+</div>
+
+<!-- SECTION 3 -->
+<div class="section">
+  <h2>3. Root Cause & Key Insight</h2>
+  <p>
+    After breaking down the experience, the problem was not just incorrect orders, but the way the system handles them.
+  </p>
+
+  <ul>
+    <li>The complaint flow is unstructured and not user-driven</li>
+    <li>There is no item-level issue reporting</li>
+    <li>Resolution options are not clearly presented</li>
+    <li>There is limited visibility into the status of the issue</li>
+  </ul>
+
+  <p><strong>Key Insight:</strong><br>
+    The real problem is not issue resolution itself, but the absence of a structured,
+    transparent, and user-controlled resolution process.
+  </p>
+</div>
+
+<!-- IMAGE -->
+<div class="section">
+  <p><strong>Existing Experience: Unstructured Issue Resolution Flow</strong></p>
+  <img src="assests/Original_flow.png">
+</div>
+
+<!-- SECTION 4 -->
+<div class="section">
+  <h2>4. Solution</h2>
+  <p>
+    The solution introduces a guided, step-by-step issue resolution flow integrated within the order details screen.
+    Instead of relying on open-ended chat interactions, the system helps users:
+  </p>
+  <ul>
+    <li>Clearly identify the issue (wrong item, missing item, delay)</li>
+    <li>Select the specific item affected</li>
+    <li>Upload an image for quick verification</li>
+    <li>Choose how they want the issue resolved (refund or replacement)</li>
+    <li>Track the progress of their request in real-time</li>
+  </ul>
+  <p>
+    This transforms the experience from reactive support to a structured decision flow.
+  </p>
+</div>
+
+<!-- SECTION 5 -->
+<div class="section">
+  <h2>5. Final Solution</h2>
+  <p>
+    The solution introduces a guided, step-by-step issue resolution flow integrated within the order details screen.<br><br>
+        • Clearly identify the issue (wrong item, missing item, delay)<br>
+        • Select the specific item affected<br>
+        • Upload an image for quick verification<br>
+        • Choose how they want the issue resolved (refund or replacement)<br>
+        • Track the progress of their request in real-time
+  </p>
+</div>
+
+<div class="section">
+  <p><strong>Proposed Solution: Structured Issue Resolution Flow</strong></p>
+  <img src="assests/User_flow.png">
+</div>
+
+
+<!-- SECTION 6 -->
+<div class="section">
+  <h2>6. Impact & Metrics</h2>
+  <p>
+    To evaluate the effectiveness of the improved issue resolution system, the following metrics focus on speed, user experience, and trust recovery.
+  </p>
+  <img src="assests/Metrics_table_1.png">
+  <img src="assests/Metrics_table_2.png">
+</div>
+
+<div class="section">
+  <h2>7. Summary</h2>
+  <p>
+    By shifting from a chatbot-driven approach to a structured resolution flow, the system becomes more predictable, transparent, and user-friendly. This not only reduces friction for users but also creates a scalable framework for handling post-order issues, ultimately strengthening trust and long-term engagement.
+  </p>
+</div>
+
+  </div>
+</div>
+
+</body>
+</html>
