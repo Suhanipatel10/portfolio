@@ -133,14 +133,26 @@ function renderProjectCard(project) {
 
   card.appendChild(media);
   card.appendChild(body);
+  
   card.addEventListener("click", (event) => {
     if (event.target.closest("a")) return;
-    window.location.href = `project.html?project=${encodeURIComponent(project.slug)}`;
+  
+    if (project.category === "cs") {
+      window.location.href = "case-study.html";
+    } else {
+      window.location.href = `project.html?project=${encodeURIComponent(project.slug)}`;
+    }
   });
+  
   card.addEventListener("keydown", (event) => {
     if (event.key === "Enter" || event.key === " ") {
       event.preventDefault();
-      window.location.href = `project.html?project=${encodeURIComponent(project.slug)}`;
+  
+      if (project.category === "cs") {
+        window.location.href = "case-study.html";
+      } else {
+        window.location.href = `project.html?project=${encodeURIComponent(project.slug)}`;
+      }
     }
   });
 
