@@ -112,14 +112,24 @@ function renderProjectCard(project) {
 
   const links = document.createElement("div");
   links.className = "project-links";
-  const githubLink = document.createElement("a");
-  githubLink.href = project.github || "#";
-  githubLink.target = "_blank";
-  githubLink.rel = "noreferrer";
-  githubLink.textContent = "GitHub";
-  githubLink.addEventListener("click", (event) => event.stopPropagation());
-  links.appendChild(githubLink);
-
+  
+  if (project.category === "cs" && project.prd) {
+    const prd = document.createElement("a");
+    prd.href = project.prd;
+    prd.textContent = "PRD Document";
+    prd.target = "_blank";
+    prd.rel = "noreferrer";
+    links.appendChild(prd);
+  }
+  
+  else if (project.github) {
+    const github = document.createElement("a");
+    github.href = project.github;
+    github.textContent = "GitHub";
+    github.target = "_blank";
+    github.rel = "noreferrer";
+    links.appendChild(github);
+  }
   if (project.demo) {
     const demoLink = document.createElement("a");
     demoLink.href = project.demo;
